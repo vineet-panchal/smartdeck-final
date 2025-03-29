@@ -1,0 +1,153 @@
+:root {
+  --navbar-grey: rgb(59, 61, 64);
+  --red-design: #c4133d;
+  --blue-design: #161a82;
+  --purple-design: #77165b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.generate-ctr {
+  background: rgb(60,60,60);
+  background: -moz-linear-gradient(180deg, rgba(60,60,60,1) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(60,60,60,1) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(180deg, rgba(60,60,60,1) 0%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3c3c3c",endColorstr="#000000",GradientType=1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.generate-input-ctr {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 0 5%;
+  padding-top: 2vh;
+}
+
+.generateBtn {
+  position: relative;
+  display: flex;
+  align-self: flex-start;
+  width: fit-content;
+  margin-top: 1vh;
+}
+
+.generateBtn {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.generateBtn {
+  min-width: 62px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #fff;
+  transition: background-color .4s;
+}
+
+.generateBtn span {
+  color: #000;
+  line-height: 1;
+  transition: color .4s;
+}
+
+.generateBtn:hover {
+  background: linear-gradient(90deg, #fff 50%, transparent 0) repeat-x,
+		linear-gradient(90deg, #fff 50%, transparent 0) repeat-x,
+		linear-gradient(0deg, #fff 50%, transparent 0) repeat-y,
+		linear-gradient(0deg, #fff 50%, transparent 0) repeat-y;
+  background-size: 6px 2px, 6px 2px, 2px 6px, 2px 6px;
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  animation: linearGradientMove .4s infinite linear;
+}
+
+.generateBtn:hover span {
+  color: #fff;
+}
+
+@keyframes linearGradientMove {
+  100% {
+    background-position: 6px 0, -6px 100%, 0 -6px, 100% 6px;
+  }
+}
+
+
+
+
+
+
+.generate-input-ctr > textarea, .generate-save-input-ctr > textarea {
+  width: 100%;
+  box-sizing: border-box; 
+  line-height: normal;
+  vertical-align: top; 
+  border-radius: 10px;
+  font-weight: 900px;
+  background-color: transparent;
+  color: rgb(99, 99, 99);
+  border: 2px solid rgb(85, 85, 85);
+  font-size: 15px;
+  font-family: Basier Square;
+  padding-top: 10px;
+  padding-left: 10px;
+  transition: all 0.3s ease;
+  z-index: 5;
+}
+
+.generate-input-ctr > textarea {
+  height: 20vh;
+}
+
+.generate-save-input-ctr > textarea {
+  height: 5vh;
+}
+
+.generate-input-ctr textarea::placeholder, .generate-save-input-ctr textarea::placeholder {
+  line-height: normal;
+}
+
+.generate-input-ctr textarea:focus, .generate-save-input-ctr textarea:focus {
+  color: rgb(197, 197, 197);
+  outline: none;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow:
+    0px 0px 10px rgba(255, 255, 255, 0.145),
+    0px 0px 5px rgba(255, 255, 255, 0.145) inset;
+}
+
+.generate-input-ctr textarea:focus, .generate-save-input-ctr textarea:focus {
+  color: rgb(197, 197, 197);
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.145);
+}
+
+.generate-input-ctr textarea::placeholder, .generate-save-input-ctr textarea::placeholder {
+  color: rgb(85, 85, 85);
+  transition: all 0.5s ease;
+}
+
+.generate-input-ctr input:focus::placeholder, .generate-save-input-ctr input:focus::placeholder {
+  color: rgb(150, 150, 150);
+}
+
+.generate-flashcards-ctr {
+  padding: 0 5%;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 50px;
+}

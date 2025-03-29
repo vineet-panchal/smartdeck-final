@@ -1,0 +1,66 @@
+:root {
+  --navbar-grey: rgb(59, 61, 64);
+  --red-design: #c4133d;
+  --blue-design: #161a82;
+  --purple-design: #77165b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.collections-ctr {
+  background: rgb(60,60,60);
+  background: -moz-linear-gradient(180deg, rgba(60,60,60,1) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(60,60,60,1) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(180deg, rgba(60,60,60,1) 0%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3c3c3c",endColorstr="#000000",GradientType=1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.collections-header {
+  color: white;
+}
+
+.collections-grid-ctr {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 260px;
+  gap: 20px; 
+  align-items: start; 
+  justify-content: center; 
+  padding: 20px;
+}
+
+.collection-card {
+  box-sizing: border-box;
+  width: 100%;
+  height: 254px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.collection-card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.collection-card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}

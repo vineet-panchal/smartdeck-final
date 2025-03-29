@@ -1,0 +1,32 @@
+.features-ctr {
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+.features-cards {
+  width: 100%;
+}
+
+.features-cards ul {
+  display: flex;
+
+}
+
+.features-cards li {
+  list-style: none;
+  width: 50%;
+  padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .features-cards ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features-cards li {
+    width: 100%;
+    padding: 40px;
+  }
+
+}

@@ -1,0 +1,17 @@
+.footer-ctr {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #121212;
+  padding: 20px;
+}
+
+.copyright-mark {
+  font-size: 12px;
+  color: rgb(161, 161, 161);
+} 

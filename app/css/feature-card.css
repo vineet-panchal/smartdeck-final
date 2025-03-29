@@ -1,0 +1,65 @@
+.featureCard {
+  display: flex;
+  padding: 40px;
+  border-radius: 20px;
+  line-height: 1.4;
+  height: 60vh;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  font-family: sans-serif;
+  color: white;
+  transition: all 1s ease;
+}
+
+#featureCard-1 {
+  background-image: url("../assets/featuresCard-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#featureCard-1:hover {
+  transform: scale(1.01);
+  box-shadow: #e79294 0px 5px 15px;
+}
+
+#featureCard-1:active {
+  box-shadow: 0px 0px 0px;
+  transform: translateY(10px);
+}
+
+#featureCard-2 {
+  background-image: url("../assets/featuresCard-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#featureCard-2:hover {
+  transform: scale(1.01);
+  box-shadow: #a8460e 0px 5px 15px;
+
+}
+
+#featureCard-2:active {
+  transform: translateY(10px);
+  box-shadow: 0px 0px 0px;
+}
+
+#featureCard-3 {
+  background-image: url("../assets/featuresCard-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#featureCard-3:hover {
+  transform: scale(1.01);
+  box-shadow: #434a59 0px 5px 15px;
+}
+
+#featureCard-3:active {
+  box-shadow: 0px 0px 0px;
+  transform: translateY(10px);
+}

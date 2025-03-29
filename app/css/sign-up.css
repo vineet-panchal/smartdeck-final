@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navbar-grey: rgb(59, 61, 64);
+  --red-design: #c4133d;
+  --blue-design: #161a82;
+  --purple-design: #77165b;
+}
+
+.signUp-ctr {
+  height: 100vh;
+  background: rgb(60,60,60);
+  background: -moz-linear-gradient(180deg, rgba(60,60,60,1) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(60,60,60,1) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(180deg, rgba(60,60,60,1) 0%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3c3c3c",endColorstr="#000000",GradientType=1);
+}
+
+.signup-form-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
